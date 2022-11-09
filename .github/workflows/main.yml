@@ -12,7 +12,7 @@ jobs:
 
       - name: Fetch release version
         run: |
-          curl -sL https://api.github.com/repos/POCorgself/maven-web-application/releases/latest | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/' > release-versions/swagger-ui-latest.txt
+          curl -sL https://api.github.com/repos/POCorgself/maven-web-application/releases/latest > release-versions/swagger-ui-latest.txt
       - name: Check for modified files
         id: git-check
         run: echo ::set-output name=modified::$([ -z "`git status --porcelain`" ] && echo "false" || echo "true")
