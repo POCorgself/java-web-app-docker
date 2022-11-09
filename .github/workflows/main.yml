@@ -12,6 +12,7 @@ jobs:
 
       - name: Fetch release version
         run: |
+          git checkout -b newbranch
           curl -sL https://api.github.com/repos/POCorgself/maven-web-application/releases/latest | grep '"name":' |  sed -E 's/.*"([^"]+)".*/\1/' > release-versions/swagger-ui-latest.txt
       - name: Check for modified files
         id: git-check
@@ -22,4 +23,4 @@ jobs:
           git config --global user.name 'Deepak'
           git config --global user.email 'your-email@users.noreply.github.com'
           git commit -am "New release version"
-          git push
+          git push origin newbranch
