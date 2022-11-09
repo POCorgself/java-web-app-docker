@@ -12,7 +12,7 @@ jobs:
 
       - name: Fetch release version
         run: |
-          curl -sL https://api.github.com/POCorgself/maven-web-application/tree/test/releases/latest | \
+          curl -sL https://github.com/POCorgself/maven-web-application/releases/tag/test | \
           jq -r ".tag_name" > release-versions/swagger-ui-latest.txt
       - name: Check for modified files
         id: git-check
