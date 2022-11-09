@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-
-      - name: Fetch release version
+      - name: create a branch
         run: |
           git checkout -b newbranch
+      - name: Fetch release version
+        run: |
           curl -sL https://api.github.com/repos/POCorgself/maven-web-application/releases/latest | grep '"name":' |  sed -E 's/.*"([^"]+)".*/\1/' > release-versions/swagger-ui-latest.txt
       - name: Check for modified files
         id: git-check
@@ -20,7 +21,7 @@ jobs:
       - name: Commit latest release version
         if: steps.git-check.outputs.modified == 'true'
         run: |
-          git config --global user.name 'Deepak'
-          git config --global user.email 'your-email@users.noreply.github.com'
+          git config user.name 'Deepak'
+          git config user.email 'your-email@users.noreply.github.com'
           git commit -am "New release version"
           git push origin newbranch
