@@ -1,1 +1,41 @@
-test
+{
+  "url": "https://api.github.com/repos/POCorgself/maven-web-application/releases/82593092",
+  "assets_url": "https://api.github.com/repos/POCorgself/maven-web-application/releases/82593092/assets",
+  "upload_url": "https://uploads.github.com/repos/POCorgself/maven-web-application/releases/82593092/assets{?name,label}",
+  "html_url": "https://github.com/POCorgself/maven-web-application/releases/tag/test",
+  "id": 82593092,
+  "author": {
+    "login": "deepaknayak439",
+    "id": 76447945,
+    "node_id": "MDQ6VXNlcjc2NDQ3OTQ1",
+    "avatar_url": "https://avatars.githubusercontent.com/u/76447945?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/deepaknayak439",
+    "html_url": "https://github.com/deepaknayak439",
+    "followers_url": "https://api.github.com/users/deepaknayak439/followers",
+    "following_url": "https://api.github.com/users/deepaknayak439/following{/other_user}",
+    "gists_url": "https://api.github.com/users/deepaknayak439/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/deepaknayak439/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/deepaknayak439/subscriptions",
+    "organizations_url": "https://api.github.com/users/deepaknayak439/orgs",
+    "repos_url": "https://api.github.com/users/deepaknayak439/repos",
+    "events_url": "https://api.github.com/users/deepaknayak439/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/deepaknayak439/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "node_id": "RE_kwDOIZ1sOM4E7EVE",
+  "tag_name": "test",
+  "target_commitish": "master",
+  "name": "v0.1.0",
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2022-11-02T15:18:57Z",
+  "published_at": "2022-11-09T19:06:34Z",
+  "assets": [
+
+  ],
+  "tarball_url": "https://api.github.com/repos/POCorgself/maven-web-application/tarball/test",
+  "zipball_url": "https://api.github.com/repos/POCorgself/maven-web-application/zipball/test",
+  "body": ""
+}
