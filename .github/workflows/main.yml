@@ -1,5 +1,7 @@
 name: Get latest release version
 on:
+  push:
+    branches: master 
   schedule:
     - cron:  '6 * * * *'
 jobs:
